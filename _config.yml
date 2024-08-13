@@ -40,8 +40,8 @@ minima:
   date_format: "%Y年%-m月%-d日"
 
 # disqus
-disqus:
-  shortname: znbic
+# disqus:
+#   shortname: znbic
 
 # 公式支持
 markdown: kramdown
