@@ -133,7 +133,17 @@ Your public key has been saved in /data/data/com.termux/files/usr/etc/ssh/ssh_ho
 ```
 
 
-Browser
+#### Browser
 ```sh
 pkg install otter-browser
 ```
+
+#### zsh和oh my zsh
+```sh
+pkg install zsh
+```
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
