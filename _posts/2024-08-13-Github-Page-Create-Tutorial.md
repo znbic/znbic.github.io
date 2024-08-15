@@ -4,7 +4,7 @@
 ## 创建仓库
 
 1. 点击创建仓库按钮
-![点击创建仓库按钮](../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg)
+![点击创建仓库按钮]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg'| relative_url }})
 
 2. 创建仓库
 ![创建仓库](../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create_repo.jpg)
