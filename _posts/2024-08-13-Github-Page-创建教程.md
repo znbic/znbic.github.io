@@ -9,26 +9,26 @@ categories: tutorial
 
 ## 创建仓库
 
-1. 点击创建仓库按钮
+### 1. 点击创建仓库按钮
 
 ![点击创建仓库按钮]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg'| relative_url }})
 
-2. 仓库设定
+### 2. 仓库设定
 
 ![创建仓库]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create_repo.jpg' | relative_url }})
 
 ## 创建Codespace
 
-1. 点击新建codespace按钮
+### 1. 点击新建codespace按钮
 ![点击创建codespace按钮]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/newCodespaceButton.jpg' | relative_url }})
 
-2. codespace设定
+### 2. codespace设定
 直接默认设定就行了。
 ![创建codespace]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/createCodeSpace.jpg' | relative_url }})
 
 ## jekyll生成博客
 
-1. 命令行操作
+### 1. 命令行操作
 
 首先打开终端，如下图所示（也可以使用 ``Ctrl + Shift + ` ``打开终端，`` ` ``是反引号，在键盘左上角）。
 
@@ -43,19 +43,19 @@ categories: tutorial
 
 
 
-2. 修改设置
+### 2. 修改设置
 根据你的需求自行修改参数。
 ![个人信息修改]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/cofigProfile.jpg' | relative_url }})
 
 ## git提交修改并同步
 
-1. `git commit`
+### 1. `git commit`
 
 如果你没听过 `git`，照着图片做好了。 
 
 ![git暂存变更]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/stageChanges.jpg' | relative_url }})
 
-2. `git` 推送到 `Github`
+### 2. `git` 推送到 `Github`
 
 ![同步变更到Github]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/syncChanges.jpg' | relative_url }})
 
