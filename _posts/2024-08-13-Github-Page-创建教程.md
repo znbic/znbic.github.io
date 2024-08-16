@@ -13,7 +13,7 @@ categories: tutorial
 
 ![点击创建仓库按钮]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg'| relative_url }})
 
-2. 创建仓库
+2. 仓库设定
 
 ![创建仓库]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create_repo.jpg' | relative_url }})
 
@@ -51,7 +51,7 @@ categories: tutorial
 
 1. `git commit`
 
-如果你没听过` git`，照着图片做好了。 
+如果你没听过 `git`，照着图片做好了。 
 
 ![git暂存变更]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/stageChanges.jpg' | relative_url }})
 
@@ -61,7 +61,7 @@ categories: tutorial
 
 ## 访问博客
 
-大功告成，等40s左右（我是这个时间）。`Github`需要一定时间来生成网站，等生成好后，你就可以输入网址：https://github用户名.github.io （例如我的是：https://znbic.github.io）访问了。
+大功告成，等40s左右（我是这个时间）。`Github`需要一定时间来生成网站，等生成好后，你就可以输入网址：`https://github用户名.github.io` （例如我的是：[`https://znbic.github.io`](https://znbic.github.io)）访问了。
 
 ![访问博客]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/visitBlog.jpg' | relative_url }})
 
