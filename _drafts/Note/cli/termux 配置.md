@@ -4,7 +4,7 @@
 ## root
 pkg install proot-distro
 proot-distro install ubuntu
-## 登陆Ubuntu
+## 登录 Ubuntu
 proot-distro login ubuntu
 
 %%
