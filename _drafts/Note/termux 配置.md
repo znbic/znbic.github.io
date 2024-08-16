@@ -90,6 +90,7 @@ pkg install xfce4-terminal
 
 #### code-server
 %%
+##### ~~暂时没用上~~
 ```
 curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz
 ```
@@ -103,8 +104,10 @@ tar -xf vscode_cli.tar.gz -C /data/data/com.termux/files/usr/bin/
 ```
 code tunnel
 ```
+ ##### ~~没用上到此为止~~
  %%
-
+ 
+##### 实际使用
 ```
 pkg install tur-repo
 ```
@@ -147,3 +150,21 @@ pkg install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+
+#### ADB
+
+```sh
+pkg install android-tools
+
+```
+
+adb配对
+
+```bash
+adb pair 192.168.1.101:41733
+```
+
+adb连接（注意端口变化）
+```
+adb connect 192.168.1.101:40505
+```
