@@ -2,15 +2,16 @@
 categories: tutorial
 ---
 
- 1. Contents{:toc}
-`2`
-`git`
+ 
 * Contents
 {:toc}
 `3`
 1. c
 {:toc}
 `4`
+1. Contents{:toc}
+`2`
+`git`
 
 ## 一、 前言
 
