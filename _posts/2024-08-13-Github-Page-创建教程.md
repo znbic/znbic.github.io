@@ -9,8 +9,12 @@ categories: tutorial
 
 `test4`
 ---
-{:toc}5
+{:toc}
 ---
+测试5
+---
+{:toc}
+测试6
 $$f(x)$$
 ##### 目录测试到此为止
 
