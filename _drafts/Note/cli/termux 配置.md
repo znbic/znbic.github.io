@@ -222,13 +222,15 @@ adb连接（注意端口变化）
 ```
 adb connect 192.168.1.101:40505
 ```
-##### 关闭后台进程限制(暂时不弄了)
+
+
+##### 关闭后台进程限制
 
 ```sh
-./adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+./adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true
 ```
 
--
+
 #### VNC
 
 #### （1） 服务器
