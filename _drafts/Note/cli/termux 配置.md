@@ -88,6 +88,12 @@ am start --user 0 -n com.realvnc.viewer.android/.app.ConnectionChooserActivity &
 
 pkg install xfce4-terminal
 
+#### VS CODE
+
+```sh
+apt install code-oss
+```
+
 #### code-server
 %%
 ##### ~~暂时没用上~~
@@ -176,6 +182,29 @@ exec zsh
 p10k configure
 ```
 
+添加当前用户到提示符（可以不弄）
+
+```
+vim ~/.p10k.zsh
+```
+
+User取消注释，没有自己加
+```
+typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    # =========================[ Line #1 ]=========================
+    # os_icon               # os identifier
+    dir                     # current directory
+    vcs                     # git status
+    # =========================[ Line #2 ]=========================
+    newline                 # \n
+    # prompt_char           # prompt symbol
+    user                    # user
+  )
+```
+
+```sh
+source ~/.zshrc
+```
 #### ADB
 
 ```sh
@@ -199,4 +228,31 @@ adb connect 192.168.1.101:40505
 ./adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
 ```
 
+-
+#### VNC
 
+#### （1） 服务器
+```sh
+apt install tigervnc
+```
+
+
+```
+vncserver :1 -localhost no
+export DISPLAY=:1
+startxfce4
+```
+#### （2） 客户端
+打开VNC Viewer
+```
+Address 127.0.0.1：5901 # 5900+1
+```
+
+
+
+####  xfce
+
+##### 任务管理器
+```
+apt install xfce4-taskmanager
+```
