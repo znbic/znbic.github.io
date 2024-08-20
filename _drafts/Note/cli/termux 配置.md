@@ -1,13 +1,16 @@
 # 配置termux图形界面
 ---
-%% 
-## root
+
+## Ubuntu
+
+```sh
 pkg install proot-distro
 proot-distro install ubuntu
+```
+
 ## 登录 Ubuntu
 proot-distro login ubuntu
 
-%%
 
 ---
 ## [安装桌面](https://b23.tv/p4iOwue)
@@ -298,6 +301,8 @@ apt install xfce4-taskmanager
 
 #### 输入法
 
-```sh
-apt install fcitx5
-```
+baidu ime
+
+#### LibreOffice
+
+
