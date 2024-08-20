@@ -92,9 +92,16 @@ pkg install xfce4-terminal
 #### tmux
 
 ```sh
+# 启用鼠标支持
+set -g mouse on
+
+# 启用系统剪贴板
 set-option -g set-clipboard on
 ```
 
+```sh
+tmux source-file ~/.tmux.conf
+```
 
 #### VS CODE
 
