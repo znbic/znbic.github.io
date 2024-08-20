@@ -88,6 +88,14 @@ am start --user 0 -n com.realvnc.viewer.android/.app.ConnectionChooserActivity &
 
 pkg install xfce4-terminal
 
+
+#### tmux
+
+```sh
+set-option -g set-clipboard on
+```
+
+
 #### VS CODE
 
 ```sh
