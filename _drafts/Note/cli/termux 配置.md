@@ -150,6 +150,11 @@ pkg install code-server
 code-server --auth none
 ```
 
+开启选择复制
+```sh
+terminal.integrated.copyonselection
+```
+
 #### Blog
 
 ```bash
@@ -251,7 +256,7 @@ adb connect 192.168.1.101:40505
 ##### 关闭后台进程限制
 
 ```sh
-./adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true
+adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true
 ```
 
 
@@ -259,7 +264,7 @@ adb connect 192.168.1.101:40505
 
 #### （1） 服务器
 ```sh
-apt install tigervnc
+apt install tigervnc # 需要 x11-repo,xfce4-session
 ```
 
 
