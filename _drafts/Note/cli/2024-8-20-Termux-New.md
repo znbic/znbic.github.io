@@ -233,3 +233,51 @@ ssh-copy-id -i ~/../usr/etc/ssh/ssh_host_rsa_key.pub root@server_ip # -p 8022
 																	# termux
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libreoffice startedd but permission denied
+
+apt install xorg-xhost然后再xhost +这样就能开放VNC的权限了，然后再proot-distro里面设置DISPLAY变量
