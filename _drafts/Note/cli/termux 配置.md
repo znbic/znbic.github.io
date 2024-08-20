@@ -86,7 +86,10 @@ am start --user 0 -n com.realvnc.viewer.android/.app.ConnectionChooserActivity &
 ## 应用安装
 #### terminal
 
+```sh
 pkg install xfce4-terminal
+```
+
 
 
 #### tmux
@@ -108,6 +111,12 @@ tmux source-file ~/.tmux.conf
 ```sh
 apt install code-oss
 ```
+set the termial copy 
+
+```sh
+terminal.integrated.copyonselection
+```
+
 
 #### code-server
 %%
@@ -265,11 +274,25 @@ startxfce4
 Address 127.0.0.1：5901 # 5900+1
 ```
 
+#### novnc
 
+```sh
+git clone https://github.com/novnc/noVNC.git
+```
+
+```sh
+./utils/novnc_proxy --vnc localhost:5901
+```
 
 ####  xfce
 
 ##### 任务管理器
 ```
 apt install xfce4-taskmanager
+```
+
+#### 输入法
+
+```sh
+apt install fcitx5
 ```
