@@ -117,17 +117,29 @@ bind-addr: 0.0.0.0:8080
 #### 2. VNC
 ##### （1） 服务器
 ```sh
-apt install tightvncserver nxrdb
+apt install tightvncserver
 ```
 
 ```bash
-# 创建 VNC 配置文件
-mkdir -p ~/.vnc
-echo -e "#!/bin/bash\nxrdb $HOME/.Xresources\nstartxfce4 &" > ~/.vnc/xstartup
-chmod +x ~/.vnc/xstartup
-
 # 启动 VNC 服务器并设置密码
 vncserver :1
+```
+
+设置桌面比如（xfce、kd、gnome）会用到的变量，这告诉了哪个vnc服务中启动桌面。
+
+```sh
+export DISPLAY=：1
+```
+
+#####  proot中运行libreoffice 可能报错
+
+
+```sh
+apt install xorg-xhost # 
+```
+
+```sh
+xhost + # 这条命令可以允许VNC允许来自任何地方的连接
 ```
 ##### （2） 客户端
 打开VNC Viewer
@@ -144,20 +156,37 @@ git clone https://github.com/novnc/noVNC.git
 ```sh
 ./utils/novnc_proxy --vnc localhost:5901
 ```
+#### 桌面环境
+##### gnome
+安装桌面环境所需的软件包，包括系统面板、窗口管理器、文件浏览器、终端等桌面应用程序。
+```sh
+sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal ubuntu-desktop
+```
 
+
+
+```
+
+pkg install xorg-server
+
+
+```
 #### neofetch
 
 ```sh
-apt install neofetch
+apt install neofetch # 
 ```
+
+
+
+
 share folder
 
 
 ```sh
 proot-distro login ubuntu --shared-tmp
-export DISPLAY=:1
+export DSPLAY=:1
 ```
-
 
 ### （二） zshrc
 

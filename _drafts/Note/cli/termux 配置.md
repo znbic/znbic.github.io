@@ -13,7 +13,7 @@ proot-distro login ubuntu
 
 
 ---
-## [安装桌面](https://b23.tv/p4iOwue)
+## [安装桌面](https://b23.tv/p4iOwue)（[后续](https://b23.tv/FUoLPYr)）
 apt install x11-repo
 apt install termux-x11-nightly
 ## 启动
@@ -118,8 +118,14 @@ set the termial copy
 
 ```sh
 terminal.integrated.copyonselection
+
 ```
 
+key-binding 
+
+```
+terminal.integrated.sendkeybingstoshell
+```
 
 #### code-server
 %%
