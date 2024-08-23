@@ -7,3 +7,4 @@ temple_minima
 .obsidian
 .trash
 .git-*
+*.code-workspace
