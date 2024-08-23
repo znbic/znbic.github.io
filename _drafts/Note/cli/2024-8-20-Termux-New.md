@@ -310,3 +310,8 @@ ssh-copy-id -i ~/../usr/etc/ssh/ssh_host_rsa_key.pub root@server_ip # -p 8022
 libreoffice startedd but permission denied
 
 apt install xorg-xhost然后再xhost +这样就能开放VNC的权限了，然后再proot-distro里面设置DISPLAY变量
+
+
+55  rm -rf ~/.config/xfce4/panel
+ 1556  rm  ~/.config/xfce4/panel                    1557  rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml
+ 1558  rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                                                   1559  ./startdesktop.zsh
