@@ -367,3 +367,30 @@ rm -rf ~/.config/xfce4/panel
  ./startdesktop.zsh
 
 ```
+
+
+
+## 中文输入法
+
+```
+fcitx5-configtool fcitx5-chinese-addons
+
+sudo apt-get install ibus-pinyin
+
+apt-get install fcitx fcitx-googlepinyin
+```
+
+
+```
+proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.termux/files/home':'/home'
+
+```
+
+
+
+
+## 声音
+
+```
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth anoymous=1" --exit-idle-time=-1
+```
