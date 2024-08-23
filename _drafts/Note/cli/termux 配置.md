@@ -265,7 +265,28 @@ adb connect 192.168.1.101:40505
 ##### 关闭后台进程限制
 
 ```sh
-adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true
+adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true Android 13+
+
+```
+```sh
+adb shell settings put global settings_enable_monitor_phantom_procs false #恢复的话改 true Android 13+
+
+```
+%% wait for sort
+
+Android 12L和Android 13
+
+            ./adb shell "settings put global settings_enable_monitor_phantom_procs false"
+
+Android 12，无GMS
+
+              ./adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+
+Android 12，有GMS
+
+              ./adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+
+
 ```
 
 
