@@ -238,7 +238,7 @@ vim ~/.ssh/config
 
 ```bash
 Host 名称
-    ServerAliveInterval 60
+    ServerAliveInterval 60 #连接老是断的情况下，调小数字
     ServerAliveCountMax 3
 ```
 
@@ -393,4 +393,19 @@ proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.term
 
 ```
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth anoymous=1" --exit-idle-time=-1
+```
+
+
+
+## tldr
+
+```
+npm install -g tldr #termux用这个很卡
+
+
+```
+
+
+```
+pkg install tealdeer # termux
 ```
