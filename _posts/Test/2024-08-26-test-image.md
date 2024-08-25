@@ -9,9 +9,17 @@ test image svg
 relative path image
 
 ![relativePath_test](../../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg)
+
+
 relative path for jekyll
+
+
 ![]({{'../assets/Images/2024-08-13-Github-Page-Create-Tutorial/create%20repo%20button.jpg'| relative_url }})
 
 svg test 
+
+
 ![testSVG](../../assets/)
-![testSVG](.././assets/Images/test/test.svg)
+
+
+![testSVG]({{'.././assets/Images/test/test.svg'|relative_url}})
