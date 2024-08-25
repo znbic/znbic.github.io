@@ -19,7 +19,7 @@ relative path for jekyll
 svg test 
 
 
-![testSVG](../../assets/)
+![testSVG](../../assets/Images/test/test.svg)
 
 
 ![testSVG]({{'.././assets/Images/test/test.svg'|relative_url}})
