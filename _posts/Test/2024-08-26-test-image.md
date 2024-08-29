@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  "Test"
+title:  "Test Image"
 date:   2024-08-26 00:41:46 +0800
 categories: Test
 comments: off
 ---
+
+![testSVG](../../assets/Images/test/test4.svg)
+
+![testSVG]({{'../../assets/Images/test/test5.svg'|relative_url}})
+
+
+
+
+
+
+---
+
 test image svg 
 relative path image
 
@@ -23,7 +35,3 @@ svg test
 
 
 ![testSVG]({{'.././assets/Images/test/test.svg'|relative_url}})
-
-![testSVG](../../assets/Images/test/test4.svg)
-![testSVG]({{'../../assets/Images/test/test5.svg'|relative_url}})
-![]
