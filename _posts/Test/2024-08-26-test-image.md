@@ -6,9 +6,9 @@ categories: Test
 comments: off
 ---
 
-![testSVG](../../assets/Images/test/test4.svg)
+![testSVG4](../../assets/Images/test/test4.svg)
 
-![testSVG]({{'../../assets/Images/test/test5.svg'|relative_url}})
+![testSVG5]({{'../../assets/Images/test/test5.svg'|relative_url}})
 
 
 
