@@ -35,3 +35,9 @@ svg test
 
 
 ![testSVG]({{'.././assets/Images/test/test.svg'|relative_url}})
+
+---
+
+
+
+![testSVG](/assets/Images/test/test4.svg)
