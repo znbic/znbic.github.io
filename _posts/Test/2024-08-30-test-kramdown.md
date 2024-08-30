@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kramdown Configuration Test"
+title: "Test Kramdown"
 date: 2024-08-30 11:06:37 +0800
 categories: test
 ---
