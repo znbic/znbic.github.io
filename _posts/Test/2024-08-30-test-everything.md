@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Test Everything"
-date: {{date}} {{time: HH:mm:ss +0800}}
+date: 2024-08-30 14:09:07 +0800
 categories: Test
 ---
 
