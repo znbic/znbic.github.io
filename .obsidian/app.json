@@ -1,0 +1,30 @@
+{
+  "mobileToolbarCommands": [
+    "editor:set-heading",
+    "editor:toggle-code",
+    "editor:insert-codeblock",
+    "editor:insert-wikilink",
+    "editor:toggle-numbered-list",
+    "editor:toggle-checklist-status",
+    "editor:insert-embed",
+    "editor:insert-tag",
+    "editor:attach-file",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:toggle-strikethrough",
+    "editor:toggle-highlight",
+    "editor:toggle-blockquote",
+    "editor:insert-link",
+    "editor:toggle-bullet-list",
+    "editor:indent-list",
+    "editor:unindent-list",
+    "editor:undo",
+    "editor:redo",
+    "editor:insert-mathblock",
+    "editor:insert-table",
+    "editor:toggle-inline-math",
+    "editor:cycle-list-checklist",
+    "editor:configure-toolbar"
+  ],
+  "promptDelete": false
+}

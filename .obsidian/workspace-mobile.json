@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "4d7d95fafd999296",
+    "type": "split",
+    "children": [
+      {
+        "id": "1752fdf772878036",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a63cc8bcd7d6283",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2024-08-29-分辨率调节.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7ba0a8eb7e98df08",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f035e6dbb75dd920",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byModifiedTime"
+          }
+        }
+      },
+      {
+        "id": "6f9eeeedcd7f1bf2",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "6213e96568db3249",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "03f7fbfbf63cc67b",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "1e968d1974fbdab9",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "74d28a168672a250",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "_drafts/2024-08-29-分辨率调节.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "cc3ed177e27eac19",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "_drafts/2024-08-29-分辨率调节.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "2728e4ccfcc68b10",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "_drafts/2024-08-29-分辨率调节.md"
+          }
+        }
+      },
+      {
+        "id": "b3f5977094219284",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templates:Insert template": false
+    }
+  },
+  "active": "6a63cc8bcd7d6283",
+  "lastOpenFiles": [
+    "_drafts/2024-08-29-Jekyll.md",
+    "_drafts/2024-08-30-.md",
+    "_drafts/2024-08-29-分辨率调节.md",
+    "_drafts/Note/cli/2024-8-20-Termux-New.md",
+    "_drafts/2024-08-29-.md",
+    "_plugins/image_path_preprocessor.rb",
+    "_plugins",
+    "_posts/Test/2024-08-26-test-image.md",
+    "assets/Images/test/test4.svg",
+    "_drafts/test-draft.md",
+    "_drafts/Template/post.md",
+    "_drafts/2024-08-31-.md",
+    "_drafts/2024-08-22-debian-youtube.md",
+    "_posts/2024-08-11-welcome-to-jekyll.md",
+    "_posts/Test/2024-08-14-test-empty.md",
+    "_posts/2024-08-13-Github-Page-创建教程.md",
+    "_posts/Test/2024-08-13-test-post.md",
+    "_drafts/Template",
+    "_drafts/template",
+    "assets/Excalidraw/Drawing 2024-08-25 23.00.14.excalidraw.md",
+    "assets/Excalidraw",
+    "_drafts/2024-08-26-test-image.md",
+    "blog.code-workspace",
+    "Untitled.canvas",
+    "_drafts/Note/cli/termux 配置.md",
+    "_drafts/2024-08-25-.md",
+    "![[]].md",
+    "_posts/2024-08-13-test-post1.md",
+    "assets/Images/test/test.svg",
+    "assets/Images/test",
+    "Excalidraw/Drawing 2024-08-25 23.00.14.excalidraw.md",
+    "Excalidraw",
+    "Untitled 1.canvas",
+    "_drafts/Note/cli/2024-08-19-ubuntu.md",
+    "_includes/icon-github.svg",
+    "_drafts/Note/cli/2024-08-21-draft.md",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/syncChanges.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/stageChanges.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/createCodeSpace.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/create_repo.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/create repo button.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/cofigProfile.jpg",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/newCodespaceButton.jpg",
+    "_posts/Test/2024-08-14-test2.md",
+    "_drafts/Note/2024-08-16-.md",
+    "_posts/2024-08-13-Github-Page-Create-Tutorial.md",
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial",
+    "assets/Images"
+  ]
+}
