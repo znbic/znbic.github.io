@@ -59,7 +59,7 @@ kramdown:
     line_numbers: true
     # line_numbers: table
     # bold_every: 5
-  header_offset: 2
+  # header_offset: 2
   
 
 
