@@ -3,7 +3,7 @@ layout: post
 title:  "Test Image"
 date:   2024-08-26 00:41:46 +0800
 categories: Test
-comments: off
+comments: false
 ---
 
 ![testSVG4](../../assets/Images/test/test4.svg)
