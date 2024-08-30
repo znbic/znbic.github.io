@@ -11,12 +11,8 @@
             "id": "6a63cc8bcd7d6283",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-08-29-分辨率调节.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -141,6 +137,16 @@
   },
   "active": "f035e6dbb75dd920",
   "lastOpenFiles": [
+    "_drafts/test/2024-08-30-test-draft.md",
+    "_drafts/test",
+    "_drafts/Note/linux/2024-08-29-Jekyll-create-cmd.md",
+    "_drafts/Note/linux/2024-08-22-debian-youtube.md",
+    "_drafts/Note/linux/2024-08-29-分辨率调节.md",
+    "_drafts/Note/linux/termux 配置.md",
+    "_drafts/Note/linux/2024-08-21-draft.md",
+    "_drafts/Note/linux/2024-8-20-Termux-New.md",
+    "_drafts/Note/linux/2024-08-19-ubuntu.md",
+    "_drafts/Note/linux",
     "_drafts/2024-08-29-分辨率调节.md",
     "_drafts/2024-08-31-.md",
     "_drafts/2024-08-29-Jekyll.md",
@@ -167,27 +173,17 @@
     "Untitled.canvas",
     "_drafts/Note/cli/termux 配置.md",
     "_drafts/2024-08-25-.md",
-    "![[]].md",
-    "_posts/2024-08-13-test-post1.md",
     "assets/Images/test/test.svg",
     "assets/Images/test",
-    "Excalidraw/Drawing 2024-08-25 23.00.14.excalidraw.md",
     "Excalidraw",
     "Untitled 1.canvas",
-    "_drafts/Note/cli/2024-08-19-ubuntu.md",
     "_includes/icon-github.svg",
-    "_drafts/Note/cli/2024-08-21-draft.md",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/syncChanges.jpg",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/stageChanges.jpg",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/createCodeSpace.jpg",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/create_repo.jpg",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/create repo button.jpg",
     "assets/Images/2024-08-13-Github-Page-Create-Tutorial/cofigProfile.jpg",
-    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/newCodespaceButton.jpg",
-    "_posts/Test/2024-08-14-test2.md",
-    "_drafts/Note/2024-08-16-.md",
-    "_posts/2024-08-13-Github-Page-Create-Tutorial.md",
-    "assets/Images/2024-08-13-Github-Page-Create-Tutorial",
-    "assets/Images"
+    "assets/Images/2024-08-13-Github-Page-Create-Tutorial/newCodespaceButton.jpg"
   ]
 }
