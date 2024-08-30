@@ -60,6 +60,8 @@ kramdown:
     # line_numbers: table
     # bold_every: 5
   # header_offset: 2
+  # hard_wrap: false
+  # parse_block_html: true
   
 
 
