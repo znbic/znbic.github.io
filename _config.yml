@@ -53,7 +53,7 @@ kramdown:
   # entity_output: as_char
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   footnote_nr: 1
-  syntax_highlighter: coderay
+  syntax_highlighter: rouge # coderay
   syntax_highlighter_opts:
     guess_lang: true
     # line_numbers: true
