@@ -43,8 +43,26 @@ minima:
 # disqus:
 #   shortname: znbic
 
-# 公式支持
+# krmdown支持
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  # auto_ids: true
+  toc_levels: 1..4
+  # entity_output: as_char
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  footnote_nr: 1
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    guess_lang: true
+    line_numbers: true
+    line_numbers: table
+    bold_every: 5
+  header_offset: 2
+  
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
