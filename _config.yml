@@ -56,7 +56,7 @@ kramdown:
   syntax_highlighter: coderay
   syntax_highlighter_opts:
     guess_lang: true
-    line_numbers: true
+    # line_numbers: true
     # line_numbers: table
     # bold_every: 5
   # header_offset: 2
