@@ -24,7 +24,7 @@ This is a test file for Kramdown configuration. It includes different elements l
 
 ### Code Block Test
 
-Here’s a Ruby code snippet with `Coderay` syntax highlighting and line numbers:
+Here’s a Ruby code snippet with `rouge` syntax highlighting and line numbers:
 
 ```ruby
 def hello_world
