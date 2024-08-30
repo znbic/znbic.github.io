@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 
-date: {{date}} 
+date: {{date}} {{time: HH:mm:ss +0800}}
 categories:
 ---
 
