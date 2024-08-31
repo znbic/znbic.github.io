@@ -317,9 +317,9 @@ pulseaudio
 
 ```
 rm -rf ~/.config/xfce4/panel
- rm  ~/.config/xfce4/panel              
+ rm  ~/.config/xfce4/panel        
  rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml
- rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                               
+ rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                         
  ./startdesktop.zsh
 
 ```
@@ -356,4 +356,4 @@ npm install -g tldr #termux用这个很卡
 pkg install tealdeer # termux
 ```
 
-# 
+## 
