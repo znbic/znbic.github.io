@@ -21,18 +21,18 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    \int_0^1 f(x)\, dx
    ```
    **Result:** 
-   \[
+   $$
    \int_0^1 f(x)\, dx
-   \]
+   $$
 
    **Example:** Add space between the terms of a product.
    ```latex
    ab\,c
    ```
    **Result:** 
-   \[
+   $$
    ab\,c
-   \]
+   $$
 
 ### 2. **Medium Space (`\:`)**
    - **Use Case:** Use a medium space to separate terms that need more distinction than a thin space provides, but where a full quad might be too much.
@@ -42,9 +42,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    a + b \: = \: c
    ```
    **Result:**
-   \[
+   $$
    a + b \: = \: c
-   \]
+   $$
 
 ### 3. **Thick Space (`\;`)**
    - **Use Case:** This space is used to clearly separate terms, often in more complex expressions or when aligning elements within the equation.
@@ -54,9 +54,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    x_1 \; + \; x_2 \; + \; x_3
    ```
    **Result:**
-   \[
+   $$
    x_1 \; + \; x_2 \; + \; x_3
-   \]
+   $$
 
 ### 4. **Quad Space (`\quad`)**
    - **Use Case:** A quad space is typically used to align elements across an equation or between different equations.
@@ -66,9 +66,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    a \quad + \quad b = c
    ```
    **Result:**
-   \[
+   $$
    a \quad + \quad b = c
-   \]
+   $$
 
    **Example:** Separate different parts of a piecewise function.
    ```latex
@@ -79,13 +79,13 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    \end{cases}
    ```
    **Result:**
-   \[
+   $$
    f(x) = 
    \begin{cases}
    x^2 \quad & \text{if } x \geq 0 \\
    -x \quad & \text{if } x < 0
    \end{cases}
-   \]
+   $$
 
 ### 5. **Double Quad Space (`\qquad`)**
    - **Use Case:** This is used when you need to significantly separate parts of an equation, often in display equations or for aligning equations that span multiple lines.
@@ -95,9 +95,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    A \qquad = \qquad B + C
    ```
    **Result:**
-   \[
+   $$
    A \qquad = \qquad B + C
-   \]
+   $$
 
 ### 6. **Negative Space (`\!`)**
    - **Use Case:** Negative space pulls elements closer together. This is useful when elements are too far apart by default, like when combining subscript and superscript.
@@ -107,9 +107,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    a^{b\!c}
    ```
    **Result:**
-   \[
+   $$
    a^{b\!c}
-   \]
+   $$
 
 ### 7. **Custom Space with `\hspace`**
    - **Use Case:** For precise control, you can specify the exact amount of space you need using `\hspace{length}`.
@@ -119,9 +119,9 @@ Choosing the appropriate space in LaTeX depends on the context and the specific 
    x \hspace{0.5cm} y
    ```
    **Result:**
-   \[
+   $$
    x \hspace{0.5cm} y
-   \]
+   $$
 
 ### Summary of Usage:
 - **Thin Space (`\,`)**: Close elements, like function arguments and differentials.
