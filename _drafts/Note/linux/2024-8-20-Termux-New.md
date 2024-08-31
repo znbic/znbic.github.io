@@ -356,4 +356,26 @@ npm install -g tldr #termux用这个很卡
 pkg install tealdeer # termux
 ```
 
-## 
+## termux clipboard set
+
+
+**vim using termux clipboard**
+
+```sh
+pkg install termux-api
+
+```
+
+**Use Clipboard Commands in Vim:**
+
+copy text to the clipboard:
+
+```sh
+:w !termux-clipboard-set
+```
+
+To paste from the clipboard into Vim:
+
+```sh
+:r !termux-clipboard-get
+```
