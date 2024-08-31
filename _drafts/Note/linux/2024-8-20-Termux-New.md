@@ -98,7 +98,27 @@ typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 source ~/.zshrc
 ```
 
-##### （2） code-server
+##### （2）plugin install
+
+
+```sh
+
+# ${ZSH_CUSTOM:-~/.oh-my-zsh/custom} means “use the value of ZSH_CUSTOM if it is set; otherwise, use ~/.oh-my-zsh/custom.”
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+```
+
+```
+
+# vim .zshrc
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+```
+
+#### 2. code-server
 
 ###### 下载
 
