@@ -1,4 +1,5 @@
 # 配置termux图形界面
+
 ---
 
 ## Ubuntu
@@ -19,7 +20,6 @@ passwd
 
 #### （一） 添加用户
 
-
 ```
 adduser 用户名 #tree # apt install passwd sudo adduser
 sudo usermod -aG sudo,adm,cdrom,plugdev,lpadmin,netdev <username>
@@ -36,8 +36,6 @@ sudo usermod -aG sudo,adm,cdrom,plugdev,lpadmin,netdev <username>
 
 #### （二） 变更用户
 
-
-
 ```
 su - 用户名    # If can't use sudo, visudo 
               # in root(export EDITOR=vim), 
@@ -45,10 +43,13 @@ su - 用户名    # If can't use sudo, visudo
               # <username> ALL ...
 
 ```
+
 ## 二、 系统设置
 
 ### （一） 应用安装
-#### 1. zsh和oh my zsh
+
+#### 1. `zsh`和`oh my zsh`
+
 ```sh
 sudo apt install zsh # apt insall sudo
 ```
@@ -56,19 +57,17 @@ sudo apt install zsh # apt insall sudo
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-##### （1）Powerlevel10k
 
+##### （1）Powerlevel10k
 
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
-
 ```
 exec zsh
 ```
-
 
 ```
 p10k configure
@@ -81,6 +80,7 @@ vim ~/.p10k.zsh
 ```
 
 User取消注释，没有自己加
+
 ```
 typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
@@ -98,13 +98,16 @@ typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
 source ~/.zshrc
 ```
 
-
 ##### （2） code-server
+
 ###### 下载
+
 ```sh
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
+
 ###### 允许外部访问
+
 ```sh
 vim ~/.config/code-server/config.yaml # 没有文件的话，先启动一次
 ```
@@ -113,9 +116,10 @@ vim ~/.config/code-server/config.yaml # 没有文件的话，先启动一次
 bind-addr: 0.0.0.0:8080
 ```
 
-
 #### 2. VNC
+
 ##### （1） 服务器
+
 ```sh
 apt install tightvncserver
 ```
@@ -131,8 +135,7 @@ vncserver :1
 export DISPLAY=：1
 ```
 
-#####  proot中运行libreoffice 可能报错
-
+##### proot中运行libreoffice 可能报错
 
 ```sh
 apt install xorg-xhost # 
@@ -141,8 +144,11 @@ apt install xorg-xhost #
 ```sh
 xhost + # 这条命令可以允许VNC允许来自任何地方的连接
 ```
+
 ##### （2） 客户端
+
 打开VNC Viewer
+
 ```
 Address 127.0.0.1：5901 # 5900+1
 ```
@@ -156,14 +162,16 @@ git clone https://github.com/novnc/noVNC.git
 ```sh
 ./utils/novnc_proxy --vnc localhost:5901
 ```
+
 #### 桌面环境
+
 ##### gnome
+
 安装桌面环境所需的软件包，包括系统面板、窗口管理器、文件浏览器、终端等桌面应用程序。
+
 ```sh
 sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal ubuntu-desktop
 ```
-
-
 
 ```
 
@@ -171,17 +179,14 @@ pkg install xorg-server
 
 
 ```
+
 #### neofetch
 
 ```sh
 apt install neofetch # 
 ```
 
-
-
-
 share folder
-
 
 ```sh
 proot-distro login ubuntu --shared-tmp
@@ -191,11 +196,13 @@ export DSPLAY=:1
 ### （二） zshrc
 
 #### 1. 安全删除
+
 ##### （1） 新建垃圾桶
 
 ```
 touch ~/.trash
 ```
+
 ##### （2） zshrc添加
 
 ```
@@ -204,6 +211,7 @@ alias rm='mv -t ~/.trash'
 ```
 
 #### 2. ssh保持连接（可以不搞）
+
 ##### （1） SSH配置文件修改
 
 ```bash
@@ -224,17 +232,15 @@ ClientAliveCountMax 3
 sudo systemctl restart sshd
 ```
 
-
-
 ## 三、客户端
 
 #### （一） ssh设置
+
 ##### 1. ssh保持连接（可以不搞）
 
 ```sh
 vim ~/.ssh/config
 ```
-
 
 ```bash
 Host 名称
@@ -262,68 +268,24 @@ ssh-copy-id -i ~/../usr/etc/ssh/ssh_host_rsa_key.pub root@server_ip # -p 8022
 																	# termux
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 待整理
 
 ## 1
+
 libreoffice startedd but permission denied
 
 apt install xorg-xhost然后再xhost +这样就能开放VNC的权限了，然后再proot-distro里面设置DISPLAY变量
 
-
-
-
-
 ## 2
+
 分辨率不行
 
 `xrandr`
+
 ```
 vim ~/.vnc/xstartup # pkg install xrandr x11-repo,termux 好像没有，用xorg-xrnadr
 
 ```
-
 
 ```
 #!/bin/sh
@@ -334,10 +296,7 @@ startxfce4 &
 
 ```
 
-
-
 ## 声音
-
 
 ```
 sudo apt install pipewire-pulse  
@@ -350,25 +309,20 @@ pactl list sources short
 
 ```
 
-
 ```
 pulseaudio
 ```
-
-
 
 ## 胡乱设置display后复原
 
 ```
 rm -rf ~/.config/xfce4/panel
- rm  ~/.config/xfce4/panel                    
+ rm  ~/.config/xfce4/panel              
  rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml
- rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                                     
+ rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                               
  ./startdesktop.zsh
 
 ```
-
-
 
 ## 中文输入法
 
@@ -380,14 +334,10 @@ sudo apt-get install ibus-pinyin
 apt-get install fcitx fcitx-googlepinyin
 ```
 
-
 ```
 proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.termux/files/home':'/home'
 
 ```
-
-
-
 
 ## 声音
 
@@ -395,17 +345,15 @@ proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.term
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth anoymous=1" --exit-idle-time=-1
 ```
 
-
-
 ## tldr
 
 ```
 npm install -g tldr #termux用这个很卡
 
-
 ```
-
 
 ```
 pkg install tealdeer # termux
 ```
+
+# 
