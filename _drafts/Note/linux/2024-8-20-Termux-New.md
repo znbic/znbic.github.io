@@ -44,6 +44,30 @@ su - 用户名    # If can't use sudo, visudo
 
 ```
 
+
+## mobox
+
+
+**install**
+
+```
+curl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install && . ~/x
+```
+
+**桌面环境启动mobox**
+
+```
+ vim ../usr/glibc/opt/scripts/start-tfm # 记得cp -a 备份
+```
+
+```
+# 第20行注释stop-all、220行注释掉stop-all
+
+# 删除最后三处（第187、188、189行）“explorer /desktop=shell,$RESOLUTION”
+
+```
+
+
 ## 二、 系统设置
 
 ### （一） 应用安装
@@ -377,7 +401,7 @@ pkg install tealdeer # termux
 ```
 
 ## termux clipboard set
-
+### 1. 暂时不弄的方法
 
 **vim using termux clipboard**
 
@@ -398,4 +422,31 @@ To paste from the clipboard into Vim:
 
 ```sh
 :r !termux-clipboard-get
+```
+
+### 2. xclip
+
+
+```
+apt install xclip
+```
+
+**.tmux.conf**
+
+```
+# 使用 xclip
+bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -selection clipboard"
+
+
+
+```
+
+```
+tmux source-file ~/.tmux.conf
+```
+
+**.vimrc**
+
+```
+set clipboard=unnamedplus
 ```
