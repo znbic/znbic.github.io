@@ -44,9 +44,7 @@ su - 用户名    # If can't use sudo, visudo
 
 ```
 
-
 ## mobox
-
 
 **install**
 
@@ -66,7 +64,6 @@ curl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install && .
 # 删除最后三处（第187、188、189行）“explorer /desktop=shell,$RESOLUTION”
 
 ```
-
 
 ## 二、 系统设置
 
@@ -123,7 +120,6 @@ source ~/.zshrc
 ```
 
 ##### （2）plugin install
-
 
 ```sh
 
@@ -361,9 +357,9 @@ pulseaudio
 
 ```
 rm -rf ~/.config/xfce4/panel
- rm  ~/.config/xfce4/panel        
+ rm  ~/.config/xfce4/panel    
  rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml
- rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                         
+ rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                     
  ./startdesktop.zsh
 
 ```
@@ -385,6 +381,13 @@ proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.term
 
 ## 声音
 
+```shell
+pactl list short sinks   # list available sinks 
+pactl list short modules # list all available sources and sinks
+
+
+```
+
 ```
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth anoymous=1" --exit-idle-time=-1
 ```
@@ -401,6 +404,7 @@ pkg install tealdeer # termux
 ```
 
 ## termux clipboard set
+
 ### 1. 暂时不弄的方法
 
 **vim using termux clipboard**
@@ -426,7 +430,6 @@ To paste from the clipboard into Vim:
 
 ### 2. xclip
 
-
 ```
 apt install xclip
 ```
@@ -449,4 +452,38 @@ tmux source-file ~/.tmux.conf
 
 ```
 set clipboard=unnamedplus
+```
+
+## telegram
+
+check dbus
+
+```sh
+dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+
+```
+
+```sh
+# [flatpak](https://flathub.org/setup/Ubuntu)
+# If dbus error, using sudo maybe can solve.Or
+# `eval $(dbus-launch --sh-syntax)` may solve.
+
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+
+# install telegram
+
+sudo flatpak install flathub org.telegram.desktop
+
+# set XDG_DATA_DIRS (a variable that defines the search paths 
+# for data files used by applications on your system).
+# `:$XDG_DATA_DIRS` will make sure XDG_DATA_DIRS will append new values into XDG_DATA_DIRS
+export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/tree/.local/share/flatpak/exports/share:$XDG_DATA_DIRS
+
+# run telegram
+flatpak run org.telegram.desktop
+
+
 ```
