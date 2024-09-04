@@ -203,6 +203,74 @@ git clone https://github.com/novnc/noVNC.git
 ./utils/novnc_proxy --vnc localhost:5901
 ```
 
+##### Encrypt novnc
+
+###### linux
+
+```sh
+apt install certbot
+```
+
+```shell
+certbot certonly --standalone -d domain_name
+```
+
+Certbot will create the necessary certificate files in `/etc/letsencrypt/live/domain_name/`.
+
+```shell
+websockify --web /path/to/noVNC --cert /etc/letsencrypt/live/domain_name/fullchain.pem --key /etc/letsencrypt/live/domain_name/privkey.pem 6080 localhost:5901
+```
+**Auto renewal of Let's Encrypt**
+
+```sh
+crontab -e
+```
+
+```sh
+# add this line to renew certificate twice a day
+0 0,12 * * * root certbot renew --quiet --post-hook "systemctl reload nginx"
+```
+
+###### termux
+
+acme.sh
+
+```sh
+git clone https://github.com/acmesh-official/acme.sh.git
+cd ./acme.sh
+./acme.sh --install -m my@example.com # add email to get notification of your encrypt status.
+```
+
+```sh
+acme.sh --issue --standalone -d domain_name # .acme.sh/domain_name
+```
+
+```shell
+websockify --web /path/to/noVNC --cert ~/.acme.sh/domain_name/fullchain.cer --key ~/.acme.sh/domain_name/domain_name.key 6080 localhost:5901
+
+```
+auto update
+```sh
+acme.sh --install-cronjob
+```
+
+###### self-signed
+
+etc/ssl/mycerts
+.ssl/mycerts
+path/to/application/certs
+```sh
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+```
+key.pem: The private key file.
+cert.pem: The certificate file.
+365 days: The certificate will be valid for one year.
+
+```
+websockify --web /path/to/noVNC --cert /path/to/cert.pem --key /path/to/key.pem 6080 localhost:5901
+```
+
+
 #### 桌面环境
 
 ##### gnome
@@ -357,9 +425,9 @@ pulseaudio
 
 ```
 rm -rf ~/.config/xfce4/panel
- rm  ~/.config/xfce4/panel    
+ rm  ~/.config/xfce4/panel  
  rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml
- rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                     
+ rm ~/.config/xfce4/xfconf/xfce-perchannel-xml                 
  ./startdesktop.zsh
 
 ```
