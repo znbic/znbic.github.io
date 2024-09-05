@@ -268,6 +268,13 @@ cert.pem: The certificate file.
 
 ```
 websockify --web /path/to/noVNC --cert /path/to/cert.pem --key /path/to/key.pem 6080 localhost:5901
+# pip install websockify # if apt install failed
+# export CMAKE_ARGS="-DRUN_NINJA_TEST=FALSE" if pip install failed. Because ninja test may fail in termux.
+# pip install  clang cmake make python-pip numpy# python-dev build-essential
+# pip install --no-cache-dir numpy
+# apt install ninja coreutils libffi-dev rust 
+####################
+# WHY? Because python pip sometimes doesn't have binary code, only has source. So it have to compile it by itself.
 ```
 
 
