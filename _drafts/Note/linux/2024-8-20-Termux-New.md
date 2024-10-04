@@ -443,17 +443,10 @@ rm -rf ~/.config/xfce4/panel
 ## 中文输入法
 
 ```
-fcitx5-configtool fcitx5-chinese-addons
-
-sudo apt-get install ibus-pinyin
-
-apt-get install fcitx fcitx-googlepinyin
+fcitx5 fcitx5-chinese-addons
+fcitx5 -d
 ```
 
-```
-proot-distro login ubuntu --user tree --shared-tmp   --bind '/data/data/com.termux/files/home':'/home'
-
-```
 
 ## 声音
 
