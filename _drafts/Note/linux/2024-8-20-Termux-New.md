@@ -161,6 +161,7 @@ bind-addr: 0.0.0.0:8080
 ##### （1） 服务器
 
 ```sh
+# sudo apt-get install dbus-x11
 apt install tightvncserver
 ```
 
@@ -398,7 +399,7 @@ apt install xorg-xhost然后再xhost +这样就能开放VNC的权限了，然后
 `xrandr`
 
 ```
-vim ~/.vnc/xstartup # pkg install xrandr x11-repo,termux 好像没有，用xorg-xrnadr
+vim ~/.vnc/xstartup # pkg install xrandr x11-repo,termux 好像没有，用xorg-xrandr
 
 ```
 
