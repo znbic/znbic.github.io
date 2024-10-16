@@ -23,6 +23,8 @@ categories: tutorial
 #### **Trello 或 Taiga**
 - **功能**：项目管理、任务分配、进度跟踪。
 - **开源情况**：Taiga 是开源的项目管理工具，而 Trello 是闭源的，但广泛使用。
+#### **PLM**
+- **openplm DocDokuPLM  GitPLM**
 
 ### 2. **产品概念设计：Figma 和 FreeCAD**
 
