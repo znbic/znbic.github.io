@@ -23,7 +23,7 @@
 				"x": 0,
 				"y": 0,
 				"rotation": 0,
-				"isLocked": true,
+				"isLocked": false,
 				"opacity": 1,
 				"meta": {
 					"savedH": 225
