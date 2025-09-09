@@ -26,5 +26,8 @@
     "editor:cycle-list-checklist",
     "editor:configure-toolbar"
   ],
-  "promptDelete": false
+  "promptDelete": false,
+  "useTab": false,
+  "strictLineBreaks": false,
+  "showLineNumber": true
 }
